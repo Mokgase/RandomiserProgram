@@ -134,8 +134,8 @@ def appending_file():
         file.close()
         print(f'Great addition to the file Master {username} Goodbye')
     else:
-        print("My Bad nigga")
-        exit()
+        print("Oh was that a mistake?")
+        adding_prompt()
 
 
 show_selector()
