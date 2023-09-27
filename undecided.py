@@ -9,7 +9,7 @@ def show_selector():
     begin = input("Are you ready to begin Master [Y]/[N]:")
     while(True):
         if begin == "Y" or begin == "y" or begin =="yes" or begin == "Yes":
-            print("Right away Master")
+            print("Right away Master",username)
             break
         else:
             print("Goodbye Master",username)
