@@ -16,42 +16,42 @@ def show_selector():
             exit()
     select = input("What genre would you like to watch between: \n Anime, Cartoons, Comedy, Documentary, Movies, Podcast, SciFi, or Romance:")
     if select == "Anime" or select == "anime":
-        with open("animeGenre.txt","r") as file:
+        with open("./GenreFiles/animeGenre.txt","r") as file:
             allText  = file.read()
             words = list(map(str,allText.split()))
             print("Master",username,"Here's something I've selected for you:",random.choice(words))
     elif select == "Cartoon" or  select == "cartoon" or select == "cartoons" or select == "Cartoons":
-        with open ("cartoonGenre.txt","r") as file:
+        with open ("./GenreFiles/cartoonGenre.txt","r") as file:
             allText = file.read()
             words = list(map(str,allText.split()))
             print("Master",username,"Here's something I've selected for you:",random.choice(words))
     elif select == "Comedy" or select == "comedy" :
-        with open ("comedyGenre.txt","r") as file:
+        with open ("./GenreFiles/comedyGenre.txt","r") as file:
             allText  = file.read()
             words = list(map(str,allText.split()))
             print("Master",username,"Here's something I've selected for you:",random.choice(words))
     elif select == "Documentary" or select == "documentary" or select == "Documentaries" or select == "documentaries":
-        with open("documentaryGenre.txt","r") as file:
+        with open("./GenreFiles/documentaryGenre.txt","r") as file:
             allText = file.read()
             words = list(map(str,allText.split()))            
             print("Master",username,"Here's something I've selected for you:",random.choice(words))
     elif select == "Podcast" or select == "podcast":
-        with open("podcastGenre.txt","r") as file:
+        with open("./GenreFiles/podcastGenre.txt","r") as file:
             allText = file.read()
             words = list(map(str,allText.split()))
             print("Master",username,"Here's something I've selected for you:",random.choice(words))
     elif select == "SciFi" or select == "scifi" or select == "Science Fiction" or select == "ScienceFiction" or select == "Scifi":
-        with open("scifiGenre.txt","r") as file:
+        with open("./GenreFiles/scifiGenre.txt","r") as file:
             allText = file.read()
             words = list(map(str,allText.split()))
             print("Master",username,"Here's something I've selected for you:",random.choice(words))
     elif select == "Movie" or select == "Movies" or select == "movie" or select == "movies":
-        with open("movieGenre.txt","r") as file:
+        with open("./GenreFiles/movieGenre.txt","r") as file:
             allText = file.read()
             words = list(map(str,allText.split()))
             print("Master",username,"Here's something I've selected for you:",random.choice(words))
     elif select == "Romance" or select == "romance" or select == "romcom" or select == "Romcom":
-        with open("romanceGenre.txt","r") as file:
+        with open("./GenreFiles/romanceGenre.txt","r") as file:
             allText = file.read()
             words = list(map(str,allText.split()))
             print("Master",username,"Here's something I've selected for you:",random.choice(words))
